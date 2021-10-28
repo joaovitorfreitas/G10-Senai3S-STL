@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "/EdJcEyVRUaMQaWmk/81HQw02aomY+kASKAicNdNycmQtibHqWmy1fJk2fmj2wF5UJrcSt8DZ2Xp2EFFhDXFwQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API_CQRS\\OkEntrega.Infra.Data\\OkEntrega.Comum\\OkEntrega.Comum.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\45546332840\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
+    "C:\\Users\\45546332840\\.nuget\\packages\\flunt\\2.0.5\\flunt.2.0.5.nupkg.sha512"
+  ],
+  "logs": []
+}

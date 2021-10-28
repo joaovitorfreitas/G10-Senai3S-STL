@@ -1,4 +1,4 @@
-USE OKEntregasIdEmpresa
+USE OKEntregas
 
 SELECT IdUsuario,  Nome, Sobrenome, Email, Senha, TipoUsuario
 FROM   Usuarios;

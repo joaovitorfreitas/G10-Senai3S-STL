@@ -1,0 +1,15 @@
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\OkEntrega.Dominio.deps.json
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\OkEntrega.Dominio.dll
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\ref\OkEntrega.Dominio.dll
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\OkEntrega.Dominio.pdb
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\OkEntrega.Comum.dll
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\bin\Debug\net5.0\OkEntrega.Comum.pdb
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.csproj.AssemblyReference.cache
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.AssemblyInfoInputs.cache
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.AssemblyInfo.cs
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.csproj.CopyComplete
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.dll
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\ref\OkEntrega.Dominio.dll
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Dominio\obj\Debug\net5.0\OkEntrega.Dominio.pdb
