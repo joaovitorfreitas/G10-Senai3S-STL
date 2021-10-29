@@ -33,7 +33,7 @@ export default class Login extends Component{
                                 <input type="password"></input>
                             </div>
                             <Link to ="/" className="forgot"><p>Esqueceu a sua senha ?</p></Link>
-                            <button className="btn">Logar</button>
+                            <Link to ="/home"><button className="btn">Logar</button> </Link>
                         </form>
                     </div>
                     <div className="images">
