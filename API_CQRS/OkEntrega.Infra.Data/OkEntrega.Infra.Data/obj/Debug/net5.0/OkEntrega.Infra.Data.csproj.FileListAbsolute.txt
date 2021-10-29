@@ -13,8 +13,8 @@ C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEnt
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.AssemblyInfoInputs.cache
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.AssemblyInfo.cs
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.csproj.CoreCompileInputs.cache
-C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.csproj.CopyComplete
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.dll
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\ref\OkEntrega.Infra.Data.dll
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.pdb
 C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.genruntimeconfig.cache
+C:\Users\45546332840\Desktop\G10-Senai3S-STL\API_CQRS\OkEntrega.Infra.Data\OkEntrega.Infra.Data\obj\Debug\net5.0\OkEntrega.Infra.Data.csproj.CopyComplete

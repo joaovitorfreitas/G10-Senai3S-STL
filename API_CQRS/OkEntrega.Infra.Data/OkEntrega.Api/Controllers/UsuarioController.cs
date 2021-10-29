@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace OkEntrega.Api.Controllers
 {
-    [Route("v1/account]")]
+    [Route("v1/account")]
     [ApiController]
     public class UsuarioController : ControllerBase
     {

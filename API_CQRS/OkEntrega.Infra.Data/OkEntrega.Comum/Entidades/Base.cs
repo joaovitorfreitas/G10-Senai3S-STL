@@ -16,6 +16,8 @@ namespace OkEntrega.Comum.Entidades
         }
 
         public Guid Id { get; set; }
+        
+
         public DateTime DataCriacao { get; set; }
     }
 }

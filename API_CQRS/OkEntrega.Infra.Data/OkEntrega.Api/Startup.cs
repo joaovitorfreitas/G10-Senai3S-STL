@@ -2,13 +2,18 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using OkEntrega.Dominio;
+using OkEntrega.Dominio.Handlers.Usuarios;
+using OkEntrega.Infra.Data.Contexts;
+using OkEntrega.Infra.Data.Repositorios;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,9 +36,16 @@ namespace OkEntrega.Api
 
             services.AddControllers();
             services.AddControllersWithViews()
-    .AddNewtonsoftJson(options =>
-    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
-);
+            .AddNewtonsoftJson(options =>
+             {
+                 // Ignora os loopings nas consultas
+                 options.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                 // Ignora valores nulos ao fazer junções nas consultas
+                 options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
+             }
+    
+);// Contexto do banco
+            //services.AddDbContext<OKEntregasContext>(z => z.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "OkEntrega.Api", Version = "v1" });
@@ -63,7 +75,8 @@ namespace OkEntrega.Api
             });
 
             #region
-            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>
+            services.AddTransient<IUsuarioRepositorio, UsuarioRepositorio>();
+            services.AddTransient<CriarContaHandle, CriarContaHandle>();
             #endregion
         }
 

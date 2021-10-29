@@ -1,4 +1,4 @@
-﻿using OkEntrega.Comum.Entidades;
+﻿using Flunt.Notifications;
 using System;
 using System.Collections.Generic;
 
@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace OkEntrega.Infra.Data.Entidades
 {
-    public partial class Usuario : Base
+    public partial class Usuario : Notifiable<Notification>
     {
 
         public Usuario()

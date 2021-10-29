@@ -12,6 +12,10 @@ namespace OkEntrega.Infra.Data.Repositorios
     public class UsuarioRepositorio : IUsuarioRepositorio
     {
         private readonly OKEntregasContext _context;
+        public UsuarioRepositorio(OKEntregasContext context)
+        {
+            _context = context;
+        }
         public void Alterar(Usuario usuario)
         {
             throw new NotImplementedException();
@@ -19,7 +23,7 @@ namespace OkEntrega.Infra.Data.Repositorios
 
         public Usuario BuscarPorEmail(string email)
         {
-            throw new NotImplementedException();
+            return _context.Usuarios.FirstOrDefault(x => x.Email.ToLower() == email.ToLower());
         }
 
         public Usuario BuscarPorId(Guid id)
@@ -34,7 +38,8 @@ namespace OkEntrega.Infra.Data.Repositorios
 
         public void Cadastrar(Usuario usuario)
         {
-            throw new NotImplementedException();
+            _context.Usuarios.Add(usuario);
+            _context.SaveChanges();
         }
 
         public ICollection<Usuario> Listar(bool? ativo = null)

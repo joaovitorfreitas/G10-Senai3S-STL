@@ -1,4 +1,5 @@
 ﻿using System;
+using Flunt.Notifications;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
 using OkEntrega.Infra.Data.Entidades;
@@ -38,6 +39,8 @@ namespace OkEntrega.Infra.Data.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Ignore<Notification>();
+
             modelBuilder.HasAnnotation("Relational:Collation", "Latin1_General_CI_AS");
 
             modelBuilder.Entity<Email>(entity =>

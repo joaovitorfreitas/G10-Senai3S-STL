@@ -38,7 +38,7 @@ namespace OkEntrega.Dominio.Commands.Usuario
                .Requires()
                .IsNotEmpty(Nome, "Nome", "Nome não pode ser vazio")
                .IsNotEmpty(Sobrenome, "Sobrenome", "Sobrenome não pode ser vazio")
-               .IsEmail(Email, "Email", "O formato do email está incorreto")
+               .IsEmail(Email, "Email", "O fsormato do email etá incorreto")
                .IsGreaterThan(Senha, 7, "Senha", "A senha deve ter pelo menos 8 caracteres")
            );
         }
