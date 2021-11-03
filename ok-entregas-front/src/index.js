@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom';
 
 import Login from './pages/login'
 import Home from './pages/home'
+import Dashboard from './pages/dashboard'
+import Voip from './pages/voip'
+import Historico from './pages/historico'
 
 import reportWebVitals from './reportWebVitals';
 import { Switch, BrowserRouter as Router, Route } from 'react-router-dom';
@@ -13,6 +16,9 @@ const rotas = (
     <Switch>
       <Route exact path = "/" component = {Login}/>
       <Route path = "/home" component = {Home}/>
+      <Route path = "/dashboard" component = {Dashboard}/>
+      <Route path = "/voice" component = {Voip}/>
+      <Route path = "/historico" component = {Historico}/>
     </Switch>
   </Router>
 )

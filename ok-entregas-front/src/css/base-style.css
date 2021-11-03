@@ -6,3 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+.flex{
+    display: flex;
+}
+
+.jc-space-eve{
+    justify-content: space-evenly;
+}
+
+.jc-space-btw{
+    justify-content: space-between;
+}
+
+.flex-collumn{
+    flex-direction: column;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}

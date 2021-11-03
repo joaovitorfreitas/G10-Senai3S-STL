@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+.content{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+}
+
+.glass-home{
+    height: 100vh;
+    width: 93.5vw;
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2));
+
+    border-radius: 30px 0 0 30px;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+}
