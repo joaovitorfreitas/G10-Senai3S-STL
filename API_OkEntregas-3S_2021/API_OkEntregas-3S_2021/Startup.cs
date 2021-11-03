@@ -109,6 +109,7 @@ namespace API_OkEntregas_3S_2021
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
             });
 
             app.UseAuthentication();
