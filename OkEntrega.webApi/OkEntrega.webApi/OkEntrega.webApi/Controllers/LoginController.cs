@@ -71,11 +71,11 @@ namespace OKEntregas.Controllers
 
                 // Gera o token
                 var token = new JwtSecurityToken(
-                    issuer: "OKEntregas.webApi",                 // emissor do token
-                    audience: "OKEntregas.webApi",               // destinatário do token
-                    claims: claims,                        // dados definidos acima
-                    expires: DateTime.Now.AddMinutes(30),  // tempo de expiração
-                    signingCredentials: creds              // credenciais do token
+                    issuer: "OKEntregas.webApi",            // emissor do token
+                    audience: "OKEntregas.webApi",          // destinatário do token
+                    claims: claims,                         // dados definidos acima
+                    expires: DateTime.Now.AddMinutes(30),   // tempo de expiração
+                    signingCredentials: creds               // credenciais do token
                 );
 
                 // Retorna Ok com o token

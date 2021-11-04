@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API ATUALIZADA\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
+    "C:\\Users\\DarkC\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API ATUALIZADA\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
+    "C:\\Users\\DarkC\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API ATUALIZADA\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\DarkC\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
         "projectName": "OkEntrega.webApi",
-        "projectPath": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API ATUALIZADA\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
-        "packagesPath": "C:\\Users\\45546332840\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\API ATUALIZADA\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
+        "projectPath": "C:\\Users\\DarkC\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+        "packagesPath": "C:\\Users\\DarkC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\DarkC\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\45546332840\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DarkC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,27 +40,15 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "BCrypt.Net-Core": {
+              "target": "Package",
+              "version": "[1.6.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
-            "Microsoft.AspNetCore.Authorization": {
-              "target": "Package",
-              "version": "[5.0.11, )"
-            },
-            "Microsoft.AspNetCore.Cors": {
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
-              "target": "Package",
-              "version": "[5.0.11, )"
-            },
-            "Microsoft.Data.SqlClient": {
-              "target": "Package",
-              "version": "[3.0.1, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
             },
@@ -74,6 +62,10 @@
               "target": "Package",
               "version": "[5.0.11, )"
             },
+            "Microsoft.EntityFrameworkCore.SqlServer.Design": {
+              "target": "Package",
+              "version": "[1.1.6, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -82,7 +74,7 @@
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.2.3, )"
+              "version": "[5.6.3, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
@@ -107,7 +99,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.206\\RuntimeIdentifierGraph.json"
         }
       }
     }

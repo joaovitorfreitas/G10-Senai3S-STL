@@ -102,8 +102,6 @@ namespace OkEntrega.webApi
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "OkEntrega.webApi v1"));
             }
 
-          
-
             app.UseAuthentication();
 
             app.UseAuthorization();

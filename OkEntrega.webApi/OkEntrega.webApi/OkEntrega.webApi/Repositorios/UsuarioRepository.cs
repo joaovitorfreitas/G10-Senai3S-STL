@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using OkEntrega.webApi.Contexts;
 using OkEntrega.webApi.Domains;
+using OkEntrega.webApi.Utils;
 using OKEntregas.Interfaces;
 
 namespace OKEntregas.Repositories
@@ -37,6 +38,7 @@ namespace OKEntregas.Repositories
 
             ctx.Usuarios.Update(usuarioBuscado);
 
+
             ctx.SaveChanges();
         }
 
@@ -58,6 +60,8 @@ namespace OKEntregas.Repositories
         public void Cadastrar(Usuario novoUsuario)
         {
             ctx.Usuarios.Add(novoUsuario);
+
+            novoUsuario.Senha = Password.cripto(novoUsuario.Senha);
 
             ctx.SaveChanges();
         }
