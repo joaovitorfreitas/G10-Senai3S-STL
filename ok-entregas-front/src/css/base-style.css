@@ -15,6 +15,10 @@
     justify-content: space-evenly;
 }
 
+.jc-center{
+    justify-content: center;
+}
+
 .jc-space-btw{
     justify-content: space-between;
 }
@@ -25,4 +29,20 @@
 
 .flex-end{
     justify-content: flex-end;
+}
+
+.ai-center{
+    align-items: center;
+}
+
+.ai-flex-start{
+    align-items: flex-start;
+}
+
+.ai-flex-end{
+    align-items: flex-end;
+}
+
+.jc-flex-start{
+    justify-content: flex-start;
 }
