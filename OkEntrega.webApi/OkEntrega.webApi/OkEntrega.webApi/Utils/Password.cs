@@ -17,6 +17,6 @@ namespace OkEntrega.webApi.Utils
         public static bool HashesValidation(string senha, string hash)
         {
             return BCrypt.Net.BCrypt.Verify(senha, hash);
-        }
+        }        
     }
 }
