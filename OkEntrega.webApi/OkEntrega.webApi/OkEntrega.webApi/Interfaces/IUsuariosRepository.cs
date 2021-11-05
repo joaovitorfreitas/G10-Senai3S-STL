@@ -39,5 +39,11 @@ namespace OKEntregas.Interfaces
         /// Valida o usuário
         /// </summary>
         Usuario Login(string email, string senha);
+
+        /// <summary>
+        /// Envio de email 
+        /// </summary>
+        /// <param name="email">Email do usuario solicitado</param>
+        void EsqueciSenha(string email);
     }
 }
