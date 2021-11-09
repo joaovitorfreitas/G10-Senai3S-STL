@@ -11,7 +11,8 @@ CREATE TABLE Usuarios
 		Sobrenome VARCHAR(200) NOT NULL,
 		Email VARCHAR(200) UNIQUE NOT NULL,
 		Senha VARCHAR(200) NOT NULL,
-		TipoUsuario BIT NOT NULL
+		TipoUsuario VARCHAR(50) NOT NULL,
+		VerificacaoEmail BIT NOT NULL
 );
 
 GO

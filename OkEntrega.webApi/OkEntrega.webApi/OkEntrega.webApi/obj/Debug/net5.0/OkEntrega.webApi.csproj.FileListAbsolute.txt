@@ -269,3 +269,6 @@ C:\Users\45546332840\Desktop\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\
 C:\Users\45546332840\Desktop\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\MailKit.dll
 C:\Users\45546332840\Desktop\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\MimeKit.dll
 C:\Users\45546332840\Desktop\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\50494391839\Desktop\G10-Senai3S-STL\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\MailKit.dll
+C:\Users\50494391839\Desktop\G10-Senai3S-STL\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\MimeKit.dll
+C:\Users\50494391839\Desktop\G10-Senai3S-STL\OkEntrega.webApi\OkEntrega.webApi\OkEntrega.webApi\bin\Debug\net5.0\BouncyCastle.Crypto.dll

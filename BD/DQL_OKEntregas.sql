@@ -1,6 +1,6 @@
 USE OKEntregas
 
-SELECT IdUsuario,  Nome, Sobrenome, Email, Senha, TipoUsuario
+SELECT IdUsuario,  Nome, Sobrenome, Email, Senha, TipoUsuario,VerificacaoEmail
 FROM   Usuarios;
 
 SELECT IdEmpresa,  NomeEmpresa, NumeroDeFuncionarios, NumeroDeTelefone, EmailEmpresa, NomeFantasia, Cnpj, SegmentoDeMercado

@@ -90,15 +90,12 @@ namespace OKEntregas.Repositories
 
 
 
-            Password.HashesValidation(senha, UsuarioBuscado.Senha);
-
-            if(senha == UsuarioBuscado.Senha)
+            if (!Password.HashesValidation(senha, UsuarioBuscado.Senha))
             {
-                return UsuarioBuscado;
-
+                return null;
             }
 
-            return null;
+            return UsuarioBuscado;
 
 
         }

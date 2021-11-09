@@ -1,8 +1,8 @@
 USE OKEntregas
 
-INSERT INTO Usuarios	(Nome, Sobrenome, Email, Senha, TipoUsuario)
-VALUES                  ('Daniel', 'Ferreira', 'daniel@gmail.com', '123', 0),
-						('Alan', 'Malu', 'alan@gmail.com', '123', 1)
+INSERT INTO Usuarios	(Nome, Sobrenome, Email, Senha, TipoUsuario, VerificacaoEmail)
+VALUES                  ('Daniel', 'Ferreira', 'daniel@gmail.com', '123','Comum', 1),
+						('Alan', 'Malu', 'alan@gmail.com', '123', 'Adm', 1)
 
 
 INSERT INTO Empresa	(NomeEmpresa, NumeroDeFuncionarios, NumeroDeTelefone, EmailEmpresa, NomeFantasia, Cnpj, SegmentoDeMercado)
