@@ -31,8 +31,7 @@ namespace OkEntrega.webApi.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-                //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                //optionsBuilder.UseSqlServer("Data Source=CYBERNOTE-14\\SQLEXPRESS;initial catalog=OKEntregas; user Id=sa; pwd=Senai@132");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
                 optionsBuilder.UseSqlServer("Data Source=CYBERNOTE-14\\SQLEXPRESS;initial catalog=OKEntregas; user Id=sa; pwd=Senai@132");
             }
         }
@@ -44,7 +43,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Email>(entity =>
             {
                 entity.HasKey(e => e.IdEmail)
-                    .HasName("PK__Email__E80F8BD4C2B9689D");
+                    .HasName("PK__Email__E80F8BD4E2C0E4DC");
 
                 entity.ToTable("Email");
 
@@ -64,7 +63,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Empresa>(entity =>
             {
                 entity.HasKey(e => e.IdEmpresa)
-                    .HasName("PK__Empresa__5EF4033EF9ACC063");
+                    .HasName("PK__Empresa__5EF4033EBBE76EE2");
 
                 entity.ToTable("Empresa");
 
@@ -100,7 +99,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Lead>(entity =>
             {
                 entity.HasKey(e => e.IdLeads)
-                    .HasName("PK__Leads__BD65919400A7F727");
+                    .HasName("PK__Leads__BD65919483844AC2");
 
                 entity.Property(e => e.Necessidades)
                     .IsRequired()
@@ -128,7 +127,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Linkedin>(entity =>
             {
                 entity.HasKey(e => e.IdLinkedin)
-                    .HasName("PK__Linkedin__8D7E36B8EC446ECF");
+                    .HasName("PK__Linkedin__8D7E36B88668F785");
 
                 entity.ToTable("Linkedin");
 
@@ -152,7 +151,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Reuniao>(entity =>
             {
                 entity.HasKey(e => e.IdReuniao)
-                    .HasName("PK__Reuniao__BA758BE3676C7796");
+                    .HasName("PK__Reuniao__BA758BE378AA513C");
 
                 entity.ToTable("Reuniao");
 
@@ -181,9 +180,9 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<Usuario>(entity =>
             {
                 entity.HasKey(e => e.IdUsuario)
-                    .HasName("PK__Usuarios__5B65BF9795F035D7");
+                    .HasName("PK__Usuarios__5B65BF9729C56284");
 
-                entity.HasIndex(e => e.Email, "UQ__Usuarios__A9D105345C7E09D1")
+                entity.HasIndex(e => e.Email, "UQ__Usuarios__A9D105346CB92465")
                     .IsUnique();
 
                 entity.Property(e => e.Email)
@@ -205,12 +204,17 @@ namespace OkEntrega.webApi.Contexts
                     .IsRequired()
                     .HasMaxLength(200)
                     .IsUnicode(false);
+
+                entity.Property(e => e.TipoUsuario)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .IsUnicode(false);
             });
 
             modelBuilder.Entity<UsuarioLead>(entity =>
             {
                 entity.HasKey(e => e.IdUsuarioLeads)
-                    .HasName("PK__UsuarioL__0B3D50E9CB60D119");
+                    .HasName("PK__UsuarioL__0B3D50E9B3429328");
 
                 entity.Property(e => e.Cargo)
                     .IsRequired()
@@ -242,7 +246,7 @@ namespace OkEntrega.webApi.Contexts
             modelBuilder.Entity<WhatsApp>(entity =>
             {
                 entity.HasKey(e => e.IdContato)
-                    .HasName("PK__WhatsAPP__2AC4F06449FAEE02");
+                    .HasName("PK__WhatsAPP__2AC4F064F52BDE71");
 
                 entity.ToTable("WhatsAPP");
 

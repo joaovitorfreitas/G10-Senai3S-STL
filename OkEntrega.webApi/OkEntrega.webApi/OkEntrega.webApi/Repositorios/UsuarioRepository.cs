@@ -88,7 +88,7 @@ namespace OKEntregas.Repositories
             
             Usuario UsuarioBuscado = ctx.Usuarios.FirstOrDefault(o => o.Email == email);
 
-
+                
 
             if (!Password.HashesValidation(senha, UsuarioBuscado.Senha))
             {
