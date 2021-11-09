@@ -100,9 +100,12 @@ namespace OKEntregas.Repositories
 
         }
 
-        public void Verficar(bool perimissao)
+        public void Verficar()
         {
-            
+            Usuario UsuarioBuscado = ctx.Usuarios.FirstOrDefault(o => o.VerificacaoEmail);
+
+            UsuarioBuscado.VerificacaoEmail = true;
+            ctx.SaveChanges();
         }
     }
 }

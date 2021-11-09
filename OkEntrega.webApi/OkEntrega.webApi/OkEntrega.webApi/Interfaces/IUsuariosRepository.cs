@@ -20,7 +20,7 @@ namespace OKEntregas.Interfaces
         /// </summary>
         Usuario BuscarPorId(int id);
 
-        void Verficar(bool perimissao);
+        void Verficar();
         /// <summary>
         /// Cadastra um novo usuário
         /// </summary>

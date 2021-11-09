@@ -69,6 +69,8 @@ namespace WallFertas.Controllers
                 emailUser = novoUsuario.Email;
 
                 _mailService.SendWelcomeEmailAsync(request, emailUser);
+
+
                 usuariosRepository.Cadastrar(novoUsuario);
 
                 return StatusCode(201);
@@ -77,6 +79,22 @@ namespace WallFertas.Controllers
             {
                 return BadRequest(ex);
             }
+        }
+
+        [HttpPost("verificar")]
+        public IActionResult Post()
+        {
+            try
+            {
+                usuariosRepository.Verficar();
+                return Ok();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
 
         //Atualizar

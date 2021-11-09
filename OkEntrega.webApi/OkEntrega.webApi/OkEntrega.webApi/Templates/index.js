@@ -1,11 +1,17 @@
+verificar = () => {
+    fetch('http://localhost:5000/api/usuario/verificar', {
+        method: "POST",
+
+    })
+}
 <td>
     <div>
-        <div></div>
-    </div>
+    <div></div>
+</div>
     <table border="0"
-           cellspacing="0"
-           cellpadding="0"
-           style="padding-bottom: 20px; max-width: 516px; min-width: 220px">
+        cellspacing="0"
+        cellpadding="0"
+        style="padding-bottom: 20px; max-width: 516px; min-width: 220px">
         <tbody>
             <tr>
                 <td width="8" style="width: 8px"></td>
@@ -17,8 +23,8 @@
               border-radius: 8px;
               /* padding: 40px 20px; */
             "
-                         align="center"
-                         class="m_2555938233131841195mdv2rw">
+                        align="center"
+                        class="m_2555938233131841195mdv2rw">
                         <div style="
                 font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,
                   Arial, sans-serif;
@@ -33,7 +39,7 @@
                 background-image: url(https://i.imgur.com/mElNyiW.png);
                 padding: 40px 0;
               ">
-                            <div style="font-size: 24px; font-weight: 700;">Seja bem vindo Ã¡ OK Entrega!</div>
+                            <div style="font-size: 24px; font-weight: 700;">Seja bem vindo á OK Entrega!</div>
                             <div style="font-size: 18px">
                                 Vamos confirmar seu e-mail
                             </div>
@@ -47,11 +53,11 @@
                 padding: 20px 0;
                 /* text-align: left; */
               ">
-                            
-                            Clique no botÃ£o abaixo para confirmar o email e finalizar o cadastro!
+
+                            Clique no botão abaixo para confirmar o email e finalizar o cadastro!
                             <div style="padding-top: 32px; text-align: center">
                                 <button href="https://youtu.be/Y5MIr9k_dPA"
-                                   style="
+                                    style="
                     font-family: 'Google Sans', Roboto, RobotoDraft, Helvetica,
                       Arial, sans-serif;
                     line-height: 16px;
@@ -66,9 +72,9 @@
                     min-width: 90px;
 
                   "
-                                   
-                                   target="_blank">
-                                    
+                                    onchange={this.verificar}
+                                    target="_blank">
+
                                     Confirmar cadastro.
                                 </button>
                             </div>
@@ -84,13 +90,13 @@
                 text-align: center;
               ">
                             <div>
-                                Este e-mail foi enviado a vocÃª para informar sobre a
-                                movimentaÃ§Ã£o de pessoas na Ã¡rea de risco.
+                                Este e-mail foi enviado a você para informar sobre a
+                                movimentação de pessoas na área de risco.
                             </div>
                             <div style="direction: ltr">
-                                Â© 2021 Avanade LLC,
+                                © 2021 Avanade LLC,
                                 <a class="m_2555938233131841195afal"
-                                   style="
+                                    style="
                     font-family: Roboto-Regular, Helvetica, Arial, sans-serif;
                     color: rgba(0, 0, 0, 0.54);
                     font-size: 11px;
@@ -98,7 +104,7 @@
                     padding-top: 12px;
                     text-align: center;
                   ">
-                                    539, Alameda BarÃ£o de Limeira, Santa Cecilia, SP 01202-001,
+                                    539, Alameda Barão de Limeira, Santa Cecilia, SP 01202-001,
                                     Brasil
                                 </a>
                             </div>
@@ -109,4 +115,4 @@
             </tr>
         </tbody>
     </table>
-</td>
+</td >
