@@ -36,7 +36,33 @@ export default class Login extends Component{
                             </div>
                         </form>
                         <div className="resultado">
-
+                            <div className="resultado-content flex flex-collumn ai-flex-start jc-space-eve">
+                                <div className="inputs-resultado flex ai-center">
+                                    <label>E-mail :</label>
+                                    <input type="text"></input>
+                                    <div className="copy">
+                                        <button>Copiar E-mail<i id="copy" className="fas fa-copy"></i></button>
+                                    </div>
+                                </div>
+                                <div className="inputs-resultado flex ai-center">
+                                    <label>Telefone :</label>
+                                    <input type="text"></input>
+                                    <div className="call">
+                                        <button>Ligar<i id="ligar" className="fas fa-phone"></i></button>
+                                    </div>
+                                </div>
+                                <div className="inputs-resultado flex ai-center">
+                                    <label>Razão Social :</label>
+                                    <input type="text"></input>
+                                </div>
+                                <div className="inputs-resultado flex ai-center">
+                                    <label>Nome Fantasia :</label>
+                                    <input type="text"></input>
+                                </div>
+                                <div className="historico flex ai-center">
+                                    <button className="flex ai-center jc-center"><i id="hist" className="fas fa-history"></i>Procurar no Histórico</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>

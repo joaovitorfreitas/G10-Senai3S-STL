@@ -7,6 +7,7 @@ import welcome from '../img/welcome.png'
 
 import '../css/base-style.css'
 import Side from '../components/side-bar'
+import Email from '../components/email'
 
 export default class Dashboard extends Component{
     constructor(props) {
@@ -20,6 +21,7 @@ export default class Dashboard extends Component{
         return (
             <main>
                 <Side/>
+                <Email/>
                 <section className="content">
                     <div className="glass-home">
                     <h1>Dashboard</h1>
