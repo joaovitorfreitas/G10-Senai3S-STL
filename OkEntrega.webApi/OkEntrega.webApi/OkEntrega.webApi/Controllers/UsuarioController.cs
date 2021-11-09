@@ -9,6 +9,8 @@ using OKEntregas.Interfaces;
 using OKEntregas.Repositories;
 
 using OkEntrega.webApi.Domains;
+using OkEntrega.webApi.Models;
+using OkEntrega.webApi.Services;
 
 namespace WallFertas.Controllers
 {
@@ -18,10 +20,12 @@ namespace WallFertas.Controllers
     public class UsuarioController : ControllerBase
     {
         private IUsuarioRepository usuariosRepository { get; set; }
+        private readonly IMailService _mailService;
 
-        public UsuarioController()
+        public UsuarioController(IMailService mailService)
         {
             usuariosRepository = new UsuarioRepository();
+            _mailService = mailService;
         }
 
         //Listar
@@ -58,10 +62,13 @@ namespace WallFertas.Controllers
         //Cadastrar
         [HttpPost]
         //[Authorize(Roles = "1")]
-        public IActionResult Post(Usuario novoUsuario)
+        public IActionResult Post(Usuario novoUsuario, [FromForm]WelcomeRequest request, string emailUser)
         {
             try
             {
+                emailUser = novoUsuario.Email;
+
+                _mailService.SendWelcomeEmailAsync(request, emailUser);
                 usuariosRepository.Cadastrar(novoUsuario);
 
                 return StatusCode(201);

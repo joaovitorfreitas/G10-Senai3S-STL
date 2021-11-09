@@ -14,8 +14,6 @@ namespace OkEntrega.webApi.Utils
             return BCrypt.Net.BCrypt.HashPassword(senha);
         }
 
-
-        // Valida Hash retorna se é Verdadeiro
         public static bool HashesValidation(string senha, string hash)
         {
             return BCrypt.Net.BCrypt.Verify(senha, hash);

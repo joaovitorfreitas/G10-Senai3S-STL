@@ -60,7 +60,8 @@ namespace OKEntregas.Controllers
                     new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
                   
                     // Armazena na Claim o nome do usuário que foi autenticado
-                    new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Typ, usuarioBuscado.TipoUsuario.ToString())
+                    new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Typ, usuarioBuscado.TipoUsuario.ToString()),
+                    new Claim("role", usuarioBuscado.TipoUsuario.ToString())
                 };
 
                 // Define a chave de acesso ao token

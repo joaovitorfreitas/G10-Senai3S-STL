@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OkEntrega.webApi.ViewModels
 {
-    public class EsqueciSenhaViewModel
+    public class EsqueciSenha
     {
         [Required(ErrorMessage = "Informe o e-mail do usuário!")]
         public string Email { get; set; }

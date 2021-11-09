@@ -20,6 +20,7 @@ namespace OKEntregas.Interfaces
         /// </summary>
         Usuario BuscarPorId(int id);
 
+        void Verficar(bool perimissao);
         /// <summary>
         /// Cadastra um novo usuário
         /// </summary>
@@ -40,10 +41,6 @@ namespace OKEntregas.Interfaces
         /// </summary>
         Usuario Login(string email, string senha);
 
-        /// <summary>
-        /// Envio de email 
-        /// </summary>
-        /// <param name="email">Email do usuario solicitado</param>
-        void EsqueciSenha(string email);
+
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\50494391839\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
+    "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\50494391839\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
+    "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\50494391839\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+        "projectUniqueName": "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
         "projectName": "OkEntrega.webApi",
-        "projectPath": "C:\\Users\\50494391839\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
-        "packagesPath": "C:\\Users\\50494391839\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\50494391839\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
+        "projectPath": "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+        "packagesPath": "C:\\Users\\45546332840\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\50494391839\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\45546332840\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -44,9 +44,17 @@
               "target": "Package",
               "version": "[1.6.0, )"
             },
+            "MailKit": {
+              "target": "Package",
+              "version": "[2.15.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
             },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
@@ -71,6 +79,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.11, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[2.15.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
