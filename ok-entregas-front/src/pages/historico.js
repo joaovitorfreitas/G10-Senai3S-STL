@@ -46,6 +46,13 @@ export default class Historico extends Component{
                                     <button className="flex ai-center jc-center"><i id="new" className="fas fa-arrow-right"></i>Mais Novo</button>
                                 </div>
                             </div>
+                            <div className="card-area flex ai-flex-start">
+                                <div className="card-content">
+                                    <div className="card">
+                                        
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
