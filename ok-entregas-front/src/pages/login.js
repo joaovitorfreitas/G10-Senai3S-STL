@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
+import { parseJwt } from '../services/auth';
+
 import logo from '../img/logo.png'
 import welcome from '../img/welcome.png'
 
@@ -34,6 +36,16 @@ efetuaLogin =(event) =>{
 
             console.log('Meu token: ' + resposta.data.token)
             this.setState({isLoading: false})
+
+            console.log(parseJwt());
+            console.log(parseJwt().role);
+
+            if (parseJwt().role === "admin") {
+                this.props.history.push('/home')
+            }
+            else{
+                this.props.history.push('/')
+            }
         }
     })
 
