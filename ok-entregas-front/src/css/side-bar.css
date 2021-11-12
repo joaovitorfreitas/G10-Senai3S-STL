@@ -64,6 +64,7 @@
 #icon-user{
     color: #2ECC71;
     padding-left: 2.5px;
+    cursor: pointer;
 }
 
 #icon-history{

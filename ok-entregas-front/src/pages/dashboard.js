@@ -1,9 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 // import axios from 'axios';
-
-import logo from '../img/logo.png'
-import welcome from '../img/welcome.png'
 
 import '../css/base-style.css'
 import Side from '../components/side-bar'

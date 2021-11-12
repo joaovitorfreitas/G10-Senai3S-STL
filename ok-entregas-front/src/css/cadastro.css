@@ -1,0 +1,23 @@
+
+.modal{
+    width: 100vw;
+    height: 100vh;
+
+    top: 0;
+    position: absolute;
+
+    display: none;
+    background-color: #326c7786;
+}
+
+.modal-content{
+    width: 600px;
+    height: 400px;
+
+    background-color: brown;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.mostrar{
+    display: flex;
+}
