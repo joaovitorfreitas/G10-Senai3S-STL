@@ -4,20 +4,64 @@
     height: 100vh;
 
     top: 0;
+    left: 0;
     position: absolute;
+    z-index: 4;
 
     display: none;
-    background-color: #326c7786;
+    background-color: #14262b86;
 }
 
 .modal-content{
-    width: 600px;
-    height: 400px;
+    width: 700px;
+    height: 550px;
 
-    background-color: brown;
-    border-radius: 10px 0px 0px 10px;
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3));
+    border: 3px solid rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
 }
 
 .mostrar{
     display: flex;
+}
+
+.titulinho{
+    font-size: 22px;
+}
+
+.frase{
+    max-width: 600px;
+}
+
+.inputs-cadastro input{
+    width: 500px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.inputs-cadastro label{
+    margin-bottom: 4px;
+}
+
+.btn-cadastro{
+    width: 250px;
+    height: 60px;
+    border-radius: 30px;
+    outline: none;
+    border: 3px solid rgba(255, 255, 255, 0.8);
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.5));
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#cadastrinho{
+    font-size: 30px;
+    color: #2ECC71;
+    padding-right: 20px;
 }

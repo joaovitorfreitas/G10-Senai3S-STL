@@ -39,9 +39,25 @@ export default class Side extends Component{
                         </ul>
                     </div>
                 </section>
-                <section className="modal " id="modal">
-                    <div className="modal-content">
-                        <h1>Cadastro</h1>
+                <section className="modal flex ai-center jc-center " id="modal">
+                    <div className="modal-content flex flex-collumn ai-center jc-space-eve">
+                        <h1 className="titulinho">Cadastrar um novo usuário</h1>
+                        <div className="inputs-cadastro flex flex-collumn ai-center">
+                            <label>E-mail do usuário</label>
+                            <input type="text"></input>
+                        </div>
+                        <div className="inputs-cadastro flex flex-collumn ai-center">
+                            <label>Primeiro Nome</label>
+                            <input type="text"></input>
+                        </div>
+                        <div className="inputs-cadastro flex flex-collumn ai-center">
+                            <label>Sobrenome</label>
+                            <input type="text"></input>
+                        </div>
+                        <p className="frase">Ao concluir o processo de cadastro, o e-mail informado acima vai receber um e-mail e uma senha de primeiro acesso que deve ser trocada após o primeiro acesso.</p>
+                        <div className="flex ai-center ai-flex-end">
+                            <button className="btn-cadastro flex ai-center jc-center"><i id="cadastrinho" className="fas fa-user-plus"></i>Cadastrar</button>
+                        </div>
                     </div>
                 </section>
             </section>
