@@ -46,9 +46,63 @@ export default class Historico extends Component{
                                 </div>
                             </div>
                             <div className="card-area flex ai-flex-start">
-                                <div className="card-content">
-                                    <div className="card">
-                                        
+                                <div className="card-content flex flex-row flex-wrap jc-space-btw">
+                                    <div className="card flex flex-collumn ai-flex-start">
+                                        <div className="text flex ai-center jc-space-btw">
+                                            <p>21 / 10 / 2021</p>
+                                            <p> - </p>
+                                            <p>14 : 45</p>
+                                        </div>
+                                        <div className="assunto flex ai-center">
+                                            <p id="padrao">Enviou um email com o assunto :</p>
+                                            <p>Proposta Comercial</p>
+                                        </div>
+                                        <div className="btns flex ai-center jc-space-btw">
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card flex ai-center jc-center"><i id="lixinho" class="fas fa-trash-alt"></i>Excluir do histórico</button>
+                                            </div>
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card-star flex ai-center jc-center"><i id="star-card" className="fas fa-star"></i>Favoritar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="card flex flex-collumn ai-flex-start">
+                                        <div className="text flex ai-center jc-space-btw">
+                                            <p>21 / 10 / 2021</p>
+                                            <p> - </p>
+                                            <p>14 : 45</p>
+                                        </div>
+                                        <div className="assunto flex ai-center">
+                                            <p id="padrao">Enviou um email com o assunto :</p>
+                                            <p>Proposta Comercial</p>
+                                        </div>
+                                        <div className="btns flex ai-center jc-space-btw">
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card flex ai-center jc-center"><i id="lixinho" class="fas fa-trash-alt"></i>Excluir do histórico</button>
+                                            </div>
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card-star flex ai-center jc-center"><i id="star-card" className="fas fa-star"></i>Favoritar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="card flex flex-collumn ai-flex-start">
+                                        <div className="text flex ai-center jc-space-btw">
+                                            <p>21 / 10 / 2021</p>
+                                            <p> - </p>
+                                            <p>14 : 45</p>
+                                        </div>
+                                        <div className="assunto flex ai-center">
+                                            <p id="padrao">Enviou um email com o assunto :</p>
+                                            <p>Proposta Comercial</p>
+                                        </div>
+                                        <div className="btns flex ai-center jc-space-btw">
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card flex ai-center jc-center"><i id="lixinho" class="fas fa-trash-alt"></i>Excluir do histórico</button>
+                                            </div>
+                                            <div className="action flex ai-center">
+                                                <button className="btn-card-star flex ai-center jc-center"><i id="star-card" className="fas fa-star"></i>Favoritar</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

@@ -46,3 +46,11 @@
 .jc-flex-start{
     justify-content: flex-start;
 }
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex-row{
+    flex-direction: row;
+}
