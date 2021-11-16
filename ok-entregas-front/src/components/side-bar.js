@@ -39,11 +39,11 @@ export default class Side extends Component{
                     </div>
                 </section>
                 <section className="modal flex ai-center jc-center " id="modal">
-                    <div className="modal-content flex flex-collumn ai-center jc-space-eve">
+                    <form className="modal-content flex flex-collumn ai-center jc-space-eve">
                         <h1 className="titulinho">Cadastrar um novo usuário</h1>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>E-mail do usuário</label>
-                            <input type="text"></input>
+                            <input type="email"></input>
                         </div>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>Primeiro Nome</label>
@@ -53,11 +53,30 @@ export default class Side extends Component{
                             <label>Sobrenome</label>
                             <input type="text"></input>
                         </div>
+                        <div className="inputs-cadastro flex flex-collumn ai-center">
+                            <label>Senha</label>
+                            <input type="password"></input>
+                        </div>
+                        <div className="selects flex ai-center jc-space-eve">
+                            <div className="input-select flex flex-collumn ai-center">
+                                <label>Tipo de Usuário</label>
+                                <select className="select-cadastro">
+                                    <option>Adm</option>
+                                    <option>Visitante</option>
+                                </select>
+                            </div>
+                            <div className="checkbox flex ai-center">
+                                <label className="checkbox-container"> Verificar E-mail 
+                                    <input type="checkbox"/>    
+                                    <span className="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
                         <p className="frase">Ao concluir o processo de cadastro, o e-mail informado acima vai receber um e-mail e uma senha de primeiro acesso que deve ser trocada após o primeiro acesso.</p>
                         <div className="flex ai-center ai-flex-end">
-                            <button className="btn-cadastro flex ai-center jc-center"><i id="cadastrinho" className="fas fa-user-plus"></i>Cadastrar</button>
+                            <button type="submit" className="btn-cadastro flex ai-center jc-center"><i id="cadastrinho" className="fas fa-user-plus"></i>Cadastrar</button>
                         </div>
-                    </div>
+                    </form>
                 </section>
             </section>
         )
