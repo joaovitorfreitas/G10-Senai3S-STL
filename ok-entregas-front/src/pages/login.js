@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 
-import { parseJwt } from '../services/auth';
+import { parseJwt, usuarioAutenticado } from '../services/auth';
 
 import logo from '../img/logo.png'
 import welcome from '../img/welcome.png'
@@ -41,6 +41,7 @@ efetuaLogin =(event) =>{
             console.log(parseJwt().role);
 
             if (parseJwt().role === "admin") {
+                console.log(usuarioAutenticado());
                 this.props.history.push('/home')
             }
             else{
