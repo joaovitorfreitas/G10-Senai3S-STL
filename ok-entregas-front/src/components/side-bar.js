@@ -23,6 +23,10 @@ export default class Side extends Component{
         })
     }
 
+    deslogar () {
+        localStorage.removeItem('token-login')
+    }
+
     render() {
         return (
             <section>
@@ -34,7 +38,7 @@ export default class Side extends Component{
                             <li><Link to ="/historico"><i id="icon-history" className="fas fa-history"></i></Link></li>
                             <li><Link to ="/voice"><i id="icon-phone" className="fas fa-phone"></i></Link></li>
                             <li><Link><i id="icon-office" className="fas fa-th-large"></i></Link></li>
-                            <li><Link><i id="icon-off" className="fas fa-power-off"></i></Link></li>
+                            <li><Link to ="/"><i onClick={this.deslogar} id="icon-off" className="fas fa-power-off"></i></Link></li>
                         </ul>
                     </div>
                 </section>
