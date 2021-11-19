@@ -4,15 +4,46 @@ import { Link } from 'react-router-dom';
 import '../css/base-style.css'
 import '../css/side-bar.css'
 import '../css/cadastro.css'
+import axios from 'axios';
 
 export default class Side extends Component{
     constructor(props) {
         super(props);
         this.state = {
-
+            email : '',
+            nome : '',
+            sobrenome : '',
+            senha : '',
+            tipoUsuario : '',
+            verificacao : false
         }
     }
 
+    cadastrarUser = (event) => {
+        event.preventDefault();
+
+        let usuario = {
+            email : this.state.email,
+            nome : this.state.nome,
+            sobrenome : this.state.sobrenome,
+            senha : this.state.senha,
+            tipoUsuario : this.state.tipoUsuario,
+            verificacaoEmail : this.state.verificacao
+        };
+        axios.post("http://localhost:5000/api/usuario", usuario)
+            
+        .then (resposta => {
+            if(resposta.status === 201){
+                console.log('aeeeeee')
+            }
+        })
+        .catch(erro => {
+            console.log(erro);
+        })
+    }
+    atualizaStateCampo = (campo) => {
+        this.setState({[campo.target.name]: campo.target.value})
+      }
     abreModal = () => {
         const modal = document.getElementById('modal')
         modal.classList.add('mostrar')
@@ -43,30 +74,30 @@ export default class Side extends Component{
                     </div>
                 </section>
                 <section className="modal flex ai-center jc-center " id="modal">
-                    <form className="modal-content flex flex-collumn ai-center jc-space-eve">
+                    <form onSubmit={this.cadastrarUser} className="modal-content flex flex-collumn ai-center jc-space-eve">
                         <h1 className="titulinho">Cadastrar um novo usuário</h1>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>E-mail do usuário</label>
-                            <input type="email"></input>
+                            <input type="email" name='email' value={this.state.email} onChange={this.atualizaStateCampo}></input>
                         </div>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>Primeiro Nome</label>
-                            <input type="text"></input>
+                            <input type="text" name='nome' value={this.state.nome} onChange={this.atualizaStateCampo}></input>
                         </div>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>Sobrenome</label>
-                            <input type="text"></input>
+                            <input type="text" name='sobrenome' value={this.state.sobrenome} onChange={this.atualizaStateCampo}></input>
                         </div>
                         <div className="inputs-cadastro flex flex-collumn ai-center">
                             <label>Senha</label>
-                            <input type="password"></input>
+                            <input type="password" name='senha' value={this.state.senha} onChange={this.atualizaStateCampo}></input>
                         </div>
                         <div className="selects flex ai-center jc-space-eve">
                             <div className="input-select flex flex-collumn ai-center">
                                 <label>Tipo de Usuário</label>
-                                <select className="select-cadastro">
-                                    <option>Adm</option>
-                                    <option>Visitante</option>
+                                <select className="select-cadastro" name="tipoUsuario" value={this.state.tipoUsuario} onChange={this.atualizaStateCampo}>
+                                    <option value="admin">Adm</option>
+                                    <option value="vendedor">Vendedor</option>
                                 </select>
                             </div>
                             <div className="checkbox flex ai-center">
@@ -76,7 +107,7 @@ export default class Side extends Component{
                                 </label>
                             </div>
                         </div>
-                        <p className="frase">Ao concluir o processo de cadastro, o e-mail informado acima vai receber um e-mail e uma senha de primeiro acesso que deve ser trocada após o primeiro acesso.</p>
+                       
                         <div className="flex ai-center ai-flex-end">
                             <button type="submit" className="btn-cadastro flex ai-center jc-center"><i id="cadastrinho" className="fas fa-user-plus"></i>Cadastrar</button>
                         </div>
