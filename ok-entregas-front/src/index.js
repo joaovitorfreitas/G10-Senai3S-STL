@@ -7,9 +7,7 @@ import Dashboard from './pages/dashboard'
 import Voip from './pages/voip'
 import Historico from './pages/historico'
 
-import reportWebVitals from './reportWebVitals';
 import { Switch, BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
-import './css/index.css';
 
 import { parseJwt, usuarioAutenticado } from './services/auth';
 
@@ -36,8 +34,3 @@ const rotas = (
   </Router>
 )
 ReactDOM.render(rotas, document.getElementById('root'));
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
