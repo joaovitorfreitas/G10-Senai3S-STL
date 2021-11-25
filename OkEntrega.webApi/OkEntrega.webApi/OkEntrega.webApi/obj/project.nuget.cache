@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "jR1cJW1K3BiF2A7JOeQ603/lKVP7VFYIVpgysLGj95smfhKA/bLXZA9gs5TSAOQR6bCl9K7MuMWXJvSBAtDqxA==",
   "success": true,
   "projectFilePath": "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+=======
+  "dgSpecHash": "aIt7q4HNsFpZZeZwPM7351DOmlv5yeVdRrbMDKR05Z99LqRUlSaejG11VgvzGtOYL6hMDmX5ElVnbTWxKui7EA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
+>>>>>>> front-end
   "expectedPackageFiles": [
     "C:\\Users\\44711461817\\.nuget\\packages\\bcrypt.net-core\\1.6.0\\bcrypt.net-core.1.6.0.nupkg.sha512",
     "C:\\Users\\44711461817\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
