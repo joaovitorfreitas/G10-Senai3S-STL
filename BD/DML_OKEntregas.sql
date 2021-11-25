@@ -1,10 +1,12 @@
 USE OKEntregas
 
-INSERT INTO Usuarios	(Nome, Sobrenome, Email, Senha, TipoUsuario, VerificacaoEmail)
-VALUES                  ('Daniel', 'Ferreira', 'daniel@gmail.com', '123','Comum', 1),
-						('Alan', 'Malu', 'alan@gmail.com', '123', 'Adm', 1)
+INSERT INTO Usuarios	(Nome, Sobrenome, Email, Senha, VerificacaoEmail, IdTipoUsuario)
+VALUES                  ('Daniel', 'Ferreira', 'daniel@gmail.com', '123',1, 1),
+						('Alan', 'Malu', 'alan@gmail.com', '123', 1, 1)
 
-
+INSERT INTO TipoUsuario (TipoUsuario)
+VALUES		('Administrador'),
+			('Vendedor')
 INSERT INTO Empresa	(NomeEmpresa, NumeroDeFuncionarios, NumeroDeTelefone, EmailEmpresa, NomeFantasia, Cnpj, SegmentoDeMercado)
 VALUES                  ('EmpresaStl1', 12, 11971697877,'EmStl1@gmail.com', 'STL1', '123456789123', 'Tecnologia'),
 						('EmpresaStl2', 30, 11971697877,'EmStl2@gmail.com', 'STL2', '123456789123', 'Gastronomia'),

@@ -23,6 +23,6 @@ INNER JOIN  Leads ON  Leads.IdLeads =  Reuniao.IdLeads
 
 
 
-
+SELECT * FROM TipoUsuario
 
 

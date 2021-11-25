@@ -50,7 +50,7 @@ namespace OKEntregas.Controllers
                     return NotFound("E-mail ou senha inválidos!");
                 }
 
-                
+
                 var claims = new[]
                 {
                     // Armazena na Claim o e-mail do usuário autenticado
@@ -58,10 +58,10 @@ namespace OKEntregas.Controllers
 
                     // Armazena na Claim o ID do usuário autenticado
                     new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, usuarioBuscado.IdUsuario.ToString()),
-                  
+
                     // Armazena na Claim o nome do usuário que foi autenticado
-                    new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Typ, usuarioBuscado.TipoUsuario.ToString()),
-                    new Claim("role", usuarioBuscado.TipoUsuario.ToString())
+                    // new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Typ, usuarioBuscado.IdTipoUsuarioNavigation.IdTipoUsuario.ToString()),
+                   new Claim("role", usuarioBuscado.IdTipoUsuario.ToString())
                 };
 
                 // Define a chave de acesso ao token

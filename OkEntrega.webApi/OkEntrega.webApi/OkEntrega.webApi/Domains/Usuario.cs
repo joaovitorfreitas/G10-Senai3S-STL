@@ -17,9 +17,10 @@ namespace OkEntrega.webApi.Domains
         public string Sobrenome { get; set; }
         public string Email { get; set; }
         public string Senha { get; set; }
-        public string TipoUsuario { get; set; }
         public bool VerificacaoEmail { get; set; }
+        public int IdTipoUsuario { get; set; }
 
+        public virtual TipoUsuario IdTipoUsuarioNavigation { get; set; }
         public virtual ICollection<Reuniao> Reuniaos { get; set; }
     }
 }
