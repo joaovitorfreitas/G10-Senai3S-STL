@@ -34,7 +34,7 @@ CREATE TABLE Empresa (
 		SegmentoDeMercado VARCHAR(255) NOT NULL
 );
 
-
+GO
 
 CREATE TABLE Leads(
 		IdLeads INT IDENTITY PRIMARY KEY NOT NULL,
