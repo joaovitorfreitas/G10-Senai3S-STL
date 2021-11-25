@@ -100,19 +100,12 @@ namespace OkEntrega.webApi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseCors("CorsPolicy");
 
+                app.UseRouting();
+                app.UseSwagger();
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "OkEntrega.webApi v1"));
             }
-
-            app.UseCors("CorsPolicy");
-
-            app.UseRouting();
-            app.UseSwagger();
-
-            app.UseSwaggerUI(c =>
-            {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "OkEntrega.webApi v1");
-            });
-
 
             app.UseAuthentication();
 
