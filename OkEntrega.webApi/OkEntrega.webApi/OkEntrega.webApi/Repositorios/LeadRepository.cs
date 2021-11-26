@@ -12,7 +12,11 @@ namespace OkEntrega.webApi.Repositorios
     {
         OkEntregasContext ctx = new OkEntregasContext();
 
+<<<<<<< HEAD
         public void Atualizar(int id, Lead leadAtualizado)
+=======
+        public void Atualizar(int id, UsuarioLead leadAtualizado)
+>>>>>>> front-end
         {
             Lead leadBuscado = ctx.Leads.Find(id);
 
@@ -56,7 +60,11 @@ namespace OkEntrega.webApi.Repositorios
 
         }
 
+<<<<<<< HEAD
         public Lead BuscarPorId(int id)
+=======
+        public UsuarioLead BuscarPorId(int id)
+>>>>>>> front-end
         {
             return ctx.Leads
             .Select(u => new Lead()
@@ -69,7 +77,11 @@ namespace OkEntrega.webApi.Repositorios
             .FirstOrDefault(u => u.IdLeads == id);
         }
 
+<<<<<<< HEAD
         public void Cadastrar(Lead novoLead)
+=======
+        public void Cadastrar(UsuarioLead novoLead)
+>>>>>>> front-end
         {
             ctx.Leads.Add(novoLead);
 
@@ -83,10 +95,20 @@ namespace OkEntrega.webApi.Repositorios
             ctx.SaveChanges();
         }
 
+<<<<<<< HEAD
         public List<Lead> Listar()
         {
+<<<<<<< HEAD
             return ctx.Leads
             .ToList();
+=======
+            throw new NotImplementedException();
+=======
+        public List<UsuarioLead> Listar()
+        {
+            return ctx.UsuarioLeads.ToList();
+>>>>>>> front-end
+>>>>>>> dd71b05257f52393a0b0bccfa2d2a500bcd43744
         }
     }
 }
