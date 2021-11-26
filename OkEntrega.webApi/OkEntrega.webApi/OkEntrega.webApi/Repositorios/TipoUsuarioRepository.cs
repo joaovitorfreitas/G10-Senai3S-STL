@@ -18,17 +18,28 @@ namespace OkEntrega.webApi.Repositorios
 
         public TipoUsuario BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return ctx.TipoUsuarios
+            .Select(u => new TipoUsuario()
+            {
+                IdTipoUsuario = u.IdTipoUsuario,
+                TipoUsuario1 = u.TipoUsuario1
+
+            })
+            .FirstOrDefault(u => u.IdTipoUsuario == id);
         }
 
         public void Cadastrar(TipoUsuario novoTipoUsuario)
         {
-            throw new NotImplementedException();
+            ctx.TipoUsuarios.Add(novoTipoUsuario);
+
+            ctx.SaveChanges();
         }
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            ctx.TipoUsuarios.Remove(BuscarPorId(id));
+
+            ctx.SaveChanges();
         }
 
         public List<TipoUsuario> Listar()

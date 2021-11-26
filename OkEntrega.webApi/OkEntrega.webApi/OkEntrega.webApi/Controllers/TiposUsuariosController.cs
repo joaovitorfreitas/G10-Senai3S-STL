@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using OkEntrega.webApi.Domains;
 using OkEntrega.webApi.Interfaces;
 using OkEntrega.webApi.Repositorios;
 using System;
@@ -32,6 +33,36 @@ namespace OkEntrega.webApi.Controllers
             {
 
                 return BadRequest(erro);
+            }
+        }
+
+        [HttpPost]
+        public IActionResult Post(TipoUsuario novoTipoUsuario)
+        {
+            try
+            {
+                tipoUsuarioRepository.Cadastrar(novoTipoUsuario);
+                return StatusCode(201);
+            }
+            catch (Exception erro)
+            {
+
+                return BadRequest(erro);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            try
+            {
+                tipoUsuarioRepository.Deletar(id);
+
+                return StatusCode(204);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
             }
         }
     }

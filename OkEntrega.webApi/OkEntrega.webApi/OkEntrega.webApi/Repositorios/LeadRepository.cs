@@ -14,27 +14,79 @@ namespace OkEntrega.webApi.Repositorios
 
         public void Atualizar(int id, Lead leadAtualizado)
         {
-            throw new NotImplementedException();
+            Lead leadBuscado = ctx.Leads.Find(id);
+
+            if (leadAtualizado.Nome != null)
+            {
+                leadBuscado.Nome = leadAtualizado.Nome;
+            }
+
+            if (leadAtualizado.StatusLead != null)
+            {
+                leadBuscado.StatusLead = leadAtualizado.StatusLead;
+            }
+            if (leadAtualizado.Email != null)
+            {
+                leadBuscado.Email = leadAtualizado.Email;
+            }
+            if (leadAtualizado.Cargo != null)
+            {
+                leadBuscado.Cargo = leadAtualizado.Cargo;
+            }
+            if (leadAtualizado.Score != null)
+            {
+                leadBuscado.Score = leadAtualizado.Score;
+            }
+            if (leadAtualizado.Telefone != null)
+            {
+                leadBuscado.Telefone = leadAtualizado.Telefone;
+            }
+            if (leadAtualizado.Necessidades != null)
+            {
+                leadBuscado.Necessidades = leadAtualizado.Necessidades;
+            }
+            if (leadAtualizado.IdEmpresa != null)
+            {
+                leadBuscado.IdEmpresa = leadAtualizado.IdEmpresa;
+            }
+
+            ctx.Leads.Update(leadBuscado);
+
+            ctx.SaveChanges();
+
         }
 
         public Lead BuscarPorId(int id)
         {
-            throw new NotImplementedException();
+            return ctx.Leads
+            .Select(u => new Lead()
+            {
+                IdLeads = u.IdLeads,
+                Nome = u.Nome,
+                Email = u.Email
+
+            })
+            .FirstOrDefault(u => u.IdLeads == id);
         }
 
         public void Cadastrar(Lead novoLead)
         {
-            throw new NotImplementedException();
+            ctx.Leads.Add(novoLead);
+
+            ctx.SaveChanges();
         }
 
         public void Deletar(int id)
         {
-            throw new NotImplementedException();
+            ctx.Leads.Remove(BuscarPorId(id));
+
+            ctx.SaveChanges();
         }
 
         public List<Lead> Listar()
         {
-            throw new NotImplementedException();
+            return ctx.Leads
+            .ToList();
         }
     }
 }
