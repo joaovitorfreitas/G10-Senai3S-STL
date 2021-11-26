@@ -14,7 +14,8 @@ export default class Side extends Component{
             nome : '',
             sobrenome : '',
             senha : '',
-            tipoUsuario : '',
+            IdTipoUsuario: 0,
+            listaTipoUsuario: [],
             verificacao : false
         }
     }
@@ -27,7 +28,7 @@ export default class Side extends Component{
             nome : this.state.nome,
             sobrenome : this.state.sobrenome,
             senha : this.state.senha,
-            tipoUsuario : this.state.tipoUsuario,
+            idTipoUsuario : this.state.IdTipoUsuario,
             verificacaoEmail : this.state.verificacao
         };
         axios.post("http://localhost:5000/api/usuario", usuario)
@@ -46,6 +47,21 @@ export default class Side extends Component{
     atualizaStateCampo = (campo) => {
         this.setState({[campo.target.name]: campo.target.value})
       }
+
+    buscaTipo = () => {
+        axios("http://localhost:5000/api/TiposUsuarios",{
+            headers: {
+              'Authorization': 'Bearer ' + localStorage.getItem('login')
+            }
+          })
+
+        .then(resposta => {
+            if(resposta.status === 200){
+                this.setState({listaTipoUsuario: resposta.data})
+                console.log(this.state.listaTipoUsuario)
+            }
+        })
+    }
     abreModal = () => {
         const modal = document.getElementById('modal')
         modal.classList.add('mostrar')
@@ -60,6 +76,9 @@ export default class Side extends Component{
         localStorage.removeItem('token-login')
     }
 
+    componentDidMount() {
+        this.buscaTipo();
+    }
     render() {
         return (
             <section>
@@ -97,9 +116,21 @@ export default class Side extends Component{
                         <div className="selects flex ai-center jc-space-eve">
                             <div className="input-select flex flex-collumn ai-center">
                                 <label>Tipo de Usuário</label>
-                                <select className="select-cadastro" name="tipoUsuario" value={this.state.tipoUsuario} onChange={this.atualizaStateCampo}>
-                                    <option value="admin">Adm</option>
-                                    <option value="vendedor">Vendedor</option>
+                                <select 
+                                className="select-cadastro"
+                                name="IdTipoUsuario" 
+                                value={this.state.IdTipoUsuario} 
+                                onChange={this.atualizaStateCampo}>
+                                    <option value="0">Selecione o Tipo de Usuario</option>
+                                    {
+                                        this.state.listaTipoUsuario.map(tipo => {
+                                            return(
+                                                <option key={tipo.IdTipoUsuario} value={tipo.idTipoUsuario}>
+                                                    {tipo.tipoUsuario1}
+                                                </option>
+                                            );
+                                        })
+                                    }
                                 </select>
                             </div>
                             <div className="checkbox flex ai-center">

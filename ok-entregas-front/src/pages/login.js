@@ -40,7 +40,7 @@ efetuaLogin =(event) =>{
             console.log(parseJwt());
             console.log(parseJwt().role);
 
-            if (parseJwt().role === "admin") {
+            if (parseJwt().role === "1") {
                 console.log(usuarioAutenticado());
                 this.props.history.push('/home')
             }

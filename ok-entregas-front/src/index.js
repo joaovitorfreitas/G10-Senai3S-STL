@@ -14,7 +14,7 @@ import { parseJwt, usuarioAutenticado } from './services/auth';
 const PermissaoAdm = ({ component : Component }) => (
   <Route
     render = {props => 
-      usuarioAutenticado() && parseJwt().role ==="admin" ? 
+      usuarioAutenticado() && parseJwt().role ==="1" ? 
       <Component {...props}/>: 
       <Redirect to ="/" />
     }
