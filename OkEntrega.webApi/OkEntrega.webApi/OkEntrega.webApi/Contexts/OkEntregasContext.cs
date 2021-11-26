@@ -28,9 +28,9 @@ namespace OkEntrega.webApi.Contexts
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                // optionsBuilder.UseSqlServer("Data Source=DESKTOP-M7IPJ7L\\SQLEXPRESS;initial catalog= OKEntregas; user Id=sa; pwd=Senai@132");
-                optionsBuilder.UseSqlServer("Data Source=database-1.cmudjo7ttpbr.us-east-1.rds.amazonaws.com;initial catalog= OKEntregas; user Id=Admin; pwd=Senai132");
+//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+                 optionsBuilder.UseSqlServer("Data Source=DESKTOP-M7IPJ7L\\SQLEXPRESS;initial catalog= OKEntregas; user Id=sa; pwd=Senai@132");
+                //optionsBuilder.UseSqlServer("Data Source=database-1.cmudjo7ttpbr.us-east-1.rds.amazonaws.com;initial catalog= OKEntregas; user Id=Admin; pwd=Senai132");
             }
         }
 

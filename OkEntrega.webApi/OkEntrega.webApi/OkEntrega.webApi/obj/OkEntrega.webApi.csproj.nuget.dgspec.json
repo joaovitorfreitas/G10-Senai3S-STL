@@ -1,24 +1,7 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
     "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
-=======
-<<<<<<< HEAD
-    "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
-        "projectName": "OkEntrega.webApi",
-        "projectPath": "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
-        "packagesPath": "C:\\Users\\44711461817\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\44711461817\\Desktop\\Senai\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
-=======
-    "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {}
->>>>>>> dd71b05257f52393a0b0bccfa2d2a500bcd43744
   },
   "projects": {
     "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj": {
@@ -28,15 +11,10 @@
         "projectName": "OkEntrega.webApi",
         "projectPath": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi.csproj",
         "packagesPath": "C:\\Users\\45546332840\\.nuget\\packages\\",
-<<<<<<< HEAD
         "outputPath": "C:\\Users\\45546332840\\Desktop\\G10-Senai3S-STL\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
-=======
-        "outputPath": "C:\\Users\\45546332840\\Desktop\\OkEntrega.webApi\\OkEntrega.webApi\\OkEntrega.webApi\\obj\\",
->>>>>>> front-end
->>>>>>> dd71b05257f52393a0b0bccfa2d2a500bcd43744
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\44711461817\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\45546332840\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -133,7 +111,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

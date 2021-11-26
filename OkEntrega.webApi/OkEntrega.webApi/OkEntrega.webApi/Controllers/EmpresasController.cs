@@ -44,10 +44,10 @@ namespace OkEntrega.webApi.Controllers
                 empresaRepository.Cadastrar(novaEmpresa);
                 return StatusCode(201);
             }
-            catch (Exception)
+            catch (Exception ex)
             {
 
-                throw;
+                return BadRequest(ex);
             }
         }
 
